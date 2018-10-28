@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style media="screen">
+  h1 {
+      text-shadow: 3px 2px red;
+      font-size: 5vw;
+      font-weight: 900;
+      text-decoration: underline;
+  }
+
+    h2{
+    text-shadow: 4px 2px pink;
+
+    text-decoration-line: underline;
+  }
+  h3{
+    text-shadow: 3px 2px blue;
+    font-size: 2vw;
+    font-weight: 450;
+    text-decoration: underline;
+  }
+  body{
+    background-color: lightblue;
+    margin:0;
+  }
+* {
+    box-sizing: border-box;
+    border-color: black;
+    border-width: medium;
+
+}
+.column {
+    float: left;
+    padding: 10px;
+}
+/* Left and right column */
+.column.side {
+    width: 25%;
+    border: 5px;
+}
+/* Middle column */
+.column.middle {
+    width: 75%;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+
+.center {
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+
+div.gallery {
+    margin: 5px;
+    border: 5px solid white;
+    float: left;
+    width: 160px;
+}
+
+div.gallery:hover {
+    border: 5px solid blue;
+}
+
+div.gallery img {
+    width: 150px;
+    height: 150px;
+}
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+  </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+    <div class="jumbotron">
+    <center><big><b><h1>LET'S DISCOVER LUDHIANA</h1> </b></big></center>
+    <center><big><b><h2><marquee>Things to do in Ludhiana..</marquee> </h2> </b></big></center>
+    </div>
+    <div class="row">
+      <div class="column side">
+        <h2>ABOUT</h2>
+        <hr>
+        <p> Ludhiana is a large industrial city in the north Indian state of Punjab. The Punjab Agricultural University is home to the Museum of Rural Life, which displays pottery, musical instruments and traditional Punjabi clothing. Nearby, leafy Nehru Rose Garden features ornamental fountains and more than one thousand different rose varieties. To the north, Maharaja Ranjit Singh War Museum documents Punjabi military history.</p>
+<hr>
+        <h2>CHOOSE YOUR INTEREST</h2>
+        <hr>
+        <a href="#religious">RELIGIOUS</a><br>
+          <a href="#history">HISTORICAL</a><br>
+            <a href="#museums">MUSEUMS</a><br>
+              <a href="#landmarks">LANDMARKS</a><br>
+              <hr>
+              <hr>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d109552.36514819035!2d75.78663174308886!3d30.900326335007044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a837462345a7d%3A0x681102348ec60610!2sLudhiana%2C+Punjab!5e0!3m2!1sen!2sin!4v1532333541925" width="250" height="250" frameborder="0" style="border:0"></iframe>
+              <div class="center">  <a href="https://goo.gl/maps/T9q4s5rJfTE2" class="btn btn-info" role="button">View Map</a>
+               </div>
+               <hr>
+               <h2>EXPLORE MORE DESTINATIONS</h2>
+               <hr>
+               <a target="_blank" href="jalandhar.html">JALANDHAR</a><br>
+                 <a target="_blank" href="chandigarh.html">CHANDIGARH</a><br>
+                   <a target="_blank" href="amritsar.html">AMRITSAR</a><br>
+                    <hr>
+                    <br>
+                    <hr>
+                    <h2>GIVE YOUR REVIEWS</h2>
+                    <hr>
+                    <form  id="usrform">
+ <b>Name:</b> <input type="text" name="usrname">
+<br><br>
+<b>Feedback:</b> <textarea rows="4" cols="30" name="comment" form="usrform" placeholder="Enter your comment"></textarea>
+<input type="submit">
+</form>
+                     <hr>
+            </div>
+        <div class="column middle">
+      <center>  <h2 id="religious">RELIGIOUS PLACES TO VISIT</h2> </center>
+        <hr>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="niwaran.jpeg" alt="5Terre">
+          </a>
+          <div class="desc">DUKH NIVARAN SAHIB</div>
+
+          <center><div class="btn btn-info" id="demo" onclick="myFunction()" role="button"><i class="fa fa-heart"></i></div>
+          <div class="btn btn-info" role="button">READ MORE</div></center>
+        </div>
+        <script>
+        function myFunction() {
+        document.getElementById("demo").style.color = "red";
+        }
+        </script>
+
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="manji.jpg" alt="Forest">
+          </a>
+          <div class="desc">GURDWARA <br>MANJI SAHIB</div>
+          <center><div class="btn btn-info" id="demo1" onclick="myFunction1()" role="button"><i class="fa fa-heart"></i></div>
+          <div class="btn btn-info" role="button">READ MORE</div></center>
+        </div>
+        <script>
+        function myFunction1() {
+        document.getElementById("demo1").style.color = "red";
+        }
+        </script>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="katana.jpg" alt="Northern Lights">
+          </a>
+          <div class="desc">GURDWARA <br>KATANA SAHIB</div>
+          <center><div class="btn btn-info" id="demo2" onclick="myFunction2()" role="button"><i class="fa fa-heart"></i></div>
+          <div class="btn btn-info" role="button">READ MORE</div></center>
+        </div>
+        <script>
+        function myFunction2() {
+        document.getElementById("demo2").style.color = "red";
+        }
+        </script>
+        <div class="gallery">
+          <a target="_blank" href="#">
+            <img src="durga.jpg" alt="Mountains">
+          </a>
+          <div class="desc">DURGA MANDIR <br>LUDHIANA</div>
+          <center><div class="btn btn-info" id="demo3" onclick="myFunction3()" role="button"><i class="fa fa-heart"></i></div>
+          <div class="btn btn-info" role="button">READ MORE</div></center>
+          </div>
+          <script>
+          function myFunction3() {
+          document.getElementById("demo3").style.color = "red";
+          }
+          </script>
+      </div>
+      <div class="column middle">
+<center> <h2 id="history">HISTORICAL PLACES TO VISIT</h2> </center>
+<hr>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="lodhi.jpg" alt="5Terre">
+  </a>
+  <div class="desc">LODHI FORT</div>
+  <center><div class="btn btn-info" id="demo4" onclick="myFunction4()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+</div>
+<script>
+function myFunction4() {
+document.getElementById("demo4").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="phillaur.jpg" alt="Forest">
+  </a>
+  <div class="desc">PHILLAUR FORT</div>
+  <center><div class="btn btn-info" id="demo5" onclick="myFunction5()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+  </div>
+  <script>
+  function myFunction5() {
+  document.getElementById("demo5").style.color = "red";
+  }
+  </script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="alamgir.jpg" alt="Northern Lights">
+  </a>
+  <div class="desc">ALAMGIR</div>
+  <center><div class="btn btn-info" id="demo6" onclick="myFunction6()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+  </div>
+  <script>
+  function myFunction6() {
+  document.getElementById("demo6").style.color = "red";
+  }
+  </script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="clock.jpg" alt="Mountains">
+  </a>
+  <div class="desc">CLOCK TOWER</div>
+  <center><div class="btn btn-info" id="demo7" onclick="myFunction7()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+</div>
+<script>
+function myFunction7() {
+document.getElementById("demo7").style.color = "red";
+}
+</script>
+</div>
+
+<div class="column middle" style="float:right">
+
+<center><h2 id="museums">MUSEUMS TO VISIT</h2></center>
+<hr>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="pae.jpg" alt="5Terre">
+  </a>
+  <div class="desc">PUNJAB AGRICULTURE UNI MUSEUM</div>
+  <center><div class="btn btn-info" id="demo8" onclick="myFunction8()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+</div>
+<script>
+function myFunction8() {
+document.getElementById("demo8").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="war.jpg" alt="Forest">
+  </a>
+  <div class="desc">MAHARAJA RANJIT SINGH WAR MUSEUM</div>
+  <center><div class="btn btn-info" id="demo9" onclick="myFunction9()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+</div>
+<script>
+function myFunction9() {
+document.getElementById("demo9").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="rural.jpg" alt="Northern Lights">
+  </a>
+  <div class="desc">PUNJAB RURAL HERITAGE MUSEUM</div>
+  <center><div class="btn btn-info" id="demo10" onclick="myFunction10()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+</div>
+<script>
+function myFunction10() {
+document.getElementById("demo10").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="inter.jpg" alt="Mountains">
+  </a>
+  <div class="desc">INTERNATIONAL <br>SIKH<br> MUSEUM</div>
+  <center><div class="btn btn-info" id="demo11" onclick="myFunction11()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+</div>
+<script>
+function myFunction11() {
+document.getElementById("demo11").style.color = "red";
+}
+</script>
+</div>
+<div class="column middle" style="float:right">
+<center><h2 id="landmarks">FAMOUS LANDMARKS TO SEE</h2></center>
+<hr>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="hardy.jpg" alt="5Terre">
+  </a>
+  <div class="desc">HARDY'S <br>WORLD</div>
+  <center><div class="btn btn-info" id="demo12" onclick="myFunction12()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+</div>
+<script>
+function myFunction12() {
+document.getElementById("demo12").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="nehru.jpg" alt="Forest">
+  </a>
+  <div class="desc">NEHRU ROSE GARDEN</div>
+  <center><div class="btn btn-info" id="demo13" onclick="myFunction13()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+</div>
+<script>
+function myFunction13() {
+document.getElementById("demo13").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="tiger.gif" alt="Northern Lights">
+  </a>
+  <div class="desc">TIGER <br>SAFARI</div>
+  <center><div class="btn btn-info" id="demo14" onclick="myFunction14()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+</div>
+<script>
+function myFunction14() {
+document.getElementById("demo14").style.color = "red";
+}
+</script>
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="deer.jpg" alt="Mountains">
+  </a>
+  <div class="desc">DEER<br> PARK</div>
+  <center><div class="btn btn-info" id="demo15" onclick="myFunction15()" role="button"><i class="fa fa-heart"></i></div>
+  <div class="btn btn-info" role="button">READ MORE</div></center>
+</div>
+<script>
+function myFunction15() {
+document.getElementById("demo15").style.color = "red";
+}
+</script>
+</div>
+</div>
+    </div>
+
+  </body>
+
+    <!-- footer start here -->
+    <section class="footer-agile" style="background-color:lightgray;">
+    	<div class="container-fluid">
+    		<div class="footer-btm-agileinfo">
+    			<div class="col-md-3 col-xs-12 footer-grid w3social">
+    				<h3>About us</h3>
+    				<p class="footer-p1">  Explore your dream destinations with us. Here we are giving you the complete
+              overview of your favourite places in Punjab. You can give your reviews about the places
+              of your interest. </p>
+    				<a href="pro1page.html#about">Read More <span class="fa fa-long-arrow-right"></span></a>
+    			</div>
+    			<div class="col-md-3 col-xs-12 footer-grid">
+    				<h3>Contact Info</h3>
+    				<ul>
+    					<li><i class="fa fa-phone"></i>9041847726</li>
+    					<li><i class="fa fa-fax"></i>+12 222 333 2365</li>
+    					<li><i class="fa fa-map-marker"></i>OLD SATNMAPURA, PUNJAB, 144401.</li>
+    					<li><i class="fa fa-envelope-o"></i><a href="#">arushi1657@gmail.com</a></li>
+    					<li><i class="fa fa-globe"></i><a href="#">www.discover.com</a></li>
+    				</ul>
+    			</div>
+    			<div class="col-md-2 col-xs-12 footer-grid w3social">
+    				<h3>Quick Links</h3>
+    				<ul>
+    					<li><a href="pro1page.html">Home</a></li>
+    					<li><a href="pro1page.html#about" class="scroll">About us</a></li>
+    					<li><a href="pro1page.html#mostly" class="scroll">Mostly Viewed</a></li>
+    					<li><a href="pro1page.html#reg" class="scroll">Register</a></li>
+    				</ul>
+    			</div>
+    			<div class="col-md-4 col-xs-12 footer-grid">
+    				<h3>Latest Tweets</h3>
+    				<ul class="tweet-agile">
+    				<li>
+    					<i class="fa fa-twitter-square" aria-hidden="true"></i>
+    					<p class="tweet-p1"><a href="mailto:support@company.com">@tweetyTalker</a> Easy to discover the places.</p>
+    					<p class="tweet-p2">Posted 3 days ago.</p>
+    				</li>
+    				<li>
+    					<i class="fa fa-twitter-square" aria-hidden="true"></i>
+    					<p class="tweet-p1"><a href="mailto:support@company.com">@sunnySood</a> User friendly interface.</p>
+    					<p class="tweet-p2">Posted 3 days ago.</p>
+    				</li>
+    			</ul>
+    			</div>
+    			<div class="clearfix"> </div>
+    		</div>
+    		<div class="footer-agilem">
+    			<div class="col-sm-8 col-xs-9 copy-w3lsright">
+    				<p>© 2018 Discover. All rights reserved </a></p>
+    			</div>
+
+    			<div class="col-sm-4 col-xs-6 social-w3licon" style="float:right" style="fontSize:2vw;">
+    				<a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+    				<a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+    				<a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
+    				<a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a>
+    			</div>
+
+    			<div class="clearfix"></div>
+    		</div>
+    	</div>
+    </section>
+</html>
